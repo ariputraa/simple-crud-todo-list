@@ -37,6 +37,29 @@
                     </a>
                 </div>
 
+                
+                <div>
+                    <?php echo $__env->make('sweetalert::alert', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                    <a href="<?php echo e(route('user.excel')); ?>">
+                        <button class="btn btn-info mt-2">import user excel</button>
+                    </a>
+                </div>
+
+                <div>
+                    <?php echo $__env->make('sweetalert::alert', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                    <a href="<?php echo e(route('tdl.excel')); ?>">
+                        <button class="btn btn-info mt-2">import tdl excel</button>
+                    </a>
+                </div>
+
+                
+                <div>
+                    <?php echo $__env->make('sweetalert::alert', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                    <a href="<?php echo e(route('tdl.pdf')); ?>">
+                        <button class="btn btn-danger mt-2">import tdl pdf</button>
+                    </a>
+                </div>
+
                 <form action="<?php echo e(route('import')); ?>" method="POST" enctype="multipart/form-data">
                     <?php echo csrf_field(); ?>
                     <div class="form-group">

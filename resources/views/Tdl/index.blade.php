@@ -42,6 +42,29 @@
                     </a>
                 </div>
 
+                {{-- export excel --}}
+                <div>
+                    @include('sweetalert::alert')
+                    <a href="{{ route('user.excel') }}">
+                        <button class="btn btn-info mt-2">import user excel</button>
+                    </a>
+                </div>
+
+                <div>
+                    @include('sweetalert::alert')
+                    <a href="{{ route('tdl.excel') }}">
+                        <button class="btn btn-info mt-2">import tdl excel</button>
+                    </a>
+                </div>
+
+                {{-- export pdf --}}
+                <div>
+                    @include('sweetalert::alert')
+                    <a href="{{ route('tdl.pdf') }}">
+                        <button class="btn btn-danger mt-2">import tdl pdf</button>
+                    </a>
+                </div>
+
                 <form action="{{ route('import') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
