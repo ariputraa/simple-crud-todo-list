@@ -68,5 +68,12 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 "# decentralized-app" 
 
 # simplecrud
-simple crud in laravel. thats it
-ea7ca21023e11cd393e6c47418e5b65e6eeafa6f
+simple crud in laravel. thats it.
+
+with a simple authentification system, asimplistic and minimalism ui design with sweet alert that will make you notice the different and what changes has been made into the program.
+
+displaying ID, Day, Goal(of which you can write your todo here!), Time, and a Status display to your liking!
+
+there is also a search bar, of which you could search all your goal here(only can search the goal, for now). oh, and there is also a status filter, which, basically, a status filter...
+
+and there is a import button! so far, only support excels format, for now... oh, but you could also export the table into excels, and pdf! 
